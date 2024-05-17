@@ -17,6 +17,7 @@ struct ListView: View {
                NoItemsView()
                     .transition(AnyTransition.opacity.animation(.easeIn))
             }else{
+                
                 List{
                     ForEach(listViewModel.items) { item in
                          ListRowView(item: item)
